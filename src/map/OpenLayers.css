@@ -1,0 +1,104 @@
+.ol-rotate {
+  display: none;
+}
+
+.ol-zoom {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 20px;
+}
+.ol-zoom button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  color: rgb(41, 41, 41);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 300;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0;
+}
+.ol-zoom button:hover {
+  background: #f3f3f3;
+}
+.ol-zoom > button:first-of-type {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid rgb(231, 227, 227);
+}
+.ol-zoom > button:nth-of-type(2) {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.ol-attribution button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 20px;
+  color: rgb(41, 41, 41);
+  font-size: 21px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ol-attribution button:hover {
+  background: #f3f3f3;
+}
+.ol-attribution ul {
+  list-style: none;
+  border: none;
+  border-radius: 5px;
+  width: fit-content;
+  background: white;
+  position: absolute;
+  top: 7px;
+  left: 60px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 20px;
+  transition: all 0.25s ease-out;
+}
+@media (max-width: 599px) {
+  .ol-attribution ul {
+    font-size: 8px;
+  }
+}
+.ol-collapsed ul {
+  left: -999px;
+}
+.ol-attribution li {
+  color: rgb(41, 41, 41);
+}
+
+.ol-popup-animation {
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
